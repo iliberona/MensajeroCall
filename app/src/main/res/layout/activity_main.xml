@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="#fff"
+        android:background="@color/colorPrimary">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabContactos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contactos" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabLlamadas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Llamadas" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabMensajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mensajes" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfil" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
